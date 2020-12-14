@@ -1,2 +1,7 @@
 typescript/node_modules/
 typescript/dist/
+dotnet/.vs/
+dotnet/Refactoring/obj/
+dotnet/Refactoring/bin/
+dotnet/Refactoring.Tests/obj/
+dotnet/Refactoring.Tests/bin/
