@@ -35,9 +35,9 @@ export class Space {
             const currentDeltaY: number = currentDot.y - previousDot.y;
             const currentDeltaZ: number = currentDot.z - previousDot.z;
 
-            const coeffX = currentDeltaX / deltaX;
-            const coeffY = currentDeltaY / deltaY;
-            const coeffZ = currentDeltaZ / deltaZ;
+            const coeffX = deltaX === 0 ? currentDeltaX : currentDeltaX / deltaX;
+            const coeffY = deltaY === 0 ? currentDeltaY : currentDeltaY / deltaY;
+            const coeffZ = deltaZ === 0 ? currentDeltaZ : currentDeltaZ / deltaZ;
 
             if (coeffX !== coeffY || coeffX !== coeffZ || coeffY !== coeffZ) {
                 return false;

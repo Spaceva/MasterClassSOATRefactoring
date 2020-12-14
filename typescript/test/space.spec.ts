@@ -1,8 +1,8 @@
 import assert from 'assert';
 import 'mocha';
-import { Space } from '../src/long-method/space.model';
+import { Space } from '../src/space/space.model';
 
-describe('Long Method', () => {
+describe('Space', () => {
     it('Should not be a straight line (1 dot)', () => {
         const space = new Space();
         space.Add([
